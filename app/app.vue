@@ -7,12 +7,12 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'zh_CN'
   }
 })
 
-const title = 'Nuxt Changelog Template'
-const description = 'Display GitHub release notes as a beautiful changelog for any repository with this Nuxt UI template.'
+const title = '我的动态'
+const description = '我的动态'
 
 useSeoMeta({
   title,
@@ -32,18 +32,18 @@ useSeoMeta({
         description="Display GitHub release notes as a beautiful changelog for any repository with this Nuxt UI template."
         orientation="vertical"
         :links="[{
-          label: 'Documentation',
+          label: '联系我',
           icon: 'i-lucide-book-open',
           variant: 'ghost',
           size: 'md',
-          to: 'https://ui.nuxt.com/getting-started/installation/nuxt',
+          to: 'https://velvify.com/contact',
           target: '_blank'
         }, {
-          label: 'GitHub',
+          label: '我的小店',
           icon: 'i-simple-icons-github',
           variant: 'ghost',
           size: 'md',
-          to: 'https://github.com/nuxt-ui-templates/changelog',
+          to: 'https://velvify.com/blog',
           target: '_blank'
         }]"
         :ui="{
