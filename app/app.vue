@@ -4,7 +4,7 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: '/vv.webp' }
   ],
   htmlAttrs: {
     lang: 'zh_CN'
@@ -28,8 +28,8 @@ useSeoMeta({
   <UApp>
     <div class="min-h-screen xl:grid xl:grid-cols-2">
       <UPageSection
-        title="Release Notes"
-        description="Display GitHub release notes as a beautiful changelog for any repository with this Nuxt UI template."
+        title="吃喝玩乐"
+        description="卖点小东西"
         orientation="vertical"
         :links="[{
           label: '联系我',
