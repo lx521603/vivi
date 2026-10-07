@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  repository: 'nuxt/ui',
+  repository: 'lx521603/vivi',
   ui: {
     colors: {
       primary: 'green',
