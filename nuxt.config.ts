@@ -5,7 +5,10 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@comark/nuxt'
   ],
-
+  
+  runtimeConfig: {
+    githubToken: process.env.GITHUB_TOKEN
+  },
   devtools: {
     enabled: true
   },
