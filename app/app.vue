@@ -26,7 +26,7 @@ useSeoMeta({
 
 <template>
   <UApp>
-    <div class="min-h-screen xl:grid xl:grid-cols-2">
+    <div class="min-h-screen xl:grid xl:grid-cols-[3fr_7fr]">
       <UPageSection
         title="不追赶季节，只按自己的节奏发芽。"
         description="在喧嚣之外，圈一块地，种自己的花。"

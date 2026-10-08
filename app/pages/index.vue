@@ -1,23 +1,26 @@
 <script setup lang="ts">
 const appConfig = useAppConfig()
 
-const { data: versions } = await useFetch(computed(() => `https://ungh.cc/repos/${appConfig.repository}/releases`), {
-  transform: (data: {
-    releases: {
-      name?: string
-      tag: string
-      publishedAt: string
-      markdown: string
-    }[]
-  }) => {
-    return data.releases.map(release => ({
-      tag: release.tag,
-      title: release.name || release.tag,
-      date: release.publishedAt,
-      markdown: release.markdown
-    }))
+const { data: versions } = await useFetch(
+  computed(() => `https://ungh.cc/repos/${appConfig.repository}/releases`), 
+  {
+    transform: (data: {
+      releases: {
+        name?: string
+        tag: string
+        publishedAt: string
+        markdown: string
+      }[]
+    }) => {
+      return data.releases.map(release => ({
+        tag: release.tag,
+        title: release.name || release.tag,
+        date: release.publishedAt,
+        markdown: release.markdown
+      }))
+    }
   }
-})
+)
 </script>
 
 <template>
@@ -35,7 +38,7 @@ const { data: versions } = await useFetch(computed(() => `https://ungh.cc/repos/
       v-bind="version"
       :ui="{
         root: 'flex items-start',
-        container: 'max-w-xl min-w-0',
+        container: 'max-w-7xl min-w-0',
         header: 'border-b border-default pb-4',
         title: 'text-3xl',
         date: 'text-xs/9 text-highlighted font-mono',
