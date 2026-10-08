@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { data: versions, error, pending } = await useFetch('/api/releases', {
-  server: false,
   transform: (data: any) => {
     if (!Array.isArray(data)) return []
     return data.map(release => ({
