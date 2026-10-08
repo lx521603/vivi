@@ -5,7 +5,7 @@ const items: DropdownMenuItem[] = [{
   label: '我的小店',
   to: 'https://velvify.com/'
 }, {
-  label: '动态',
+  label: '我的动态',
   to: 'https://91.pt',
   color: 'primary',
   checked: true,
@@ -26,7 +26,7 @@ const items: DropdownMenuItem[] = [{
     size="xs"
   >
     <UButton
-      label="动态"
+      label="我的动态"
       color="primary"
       variant="subtle"
       trailing-icon="i-lucide-chevron-down"

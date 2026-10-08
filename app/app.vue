@@ -11,8 +11,8 @@ useHead({
   }
 })
 
-const title = '我的动态'
-const description = '我的动态'
+const title = '薇薇'
+const description = '薇薇-91.pt'
 
 useSeoMeta({
   title,
@@ -28,22 +28,22 @@ useSeoMeta({
   <UApp>
     <div class="min-h-screen xl:grid xl:grid-cols-2">
       <UPageSection
-        title="吃喝玩乐"
-        description="卖点小东西"
+        title="不追赶季节，只按自己的节奏发芽。"
+        description="在喧嚣之外，圈一块地，种自己的花。"
         orientation="vertical"
         :links="[{
-          label: '联系我',
-          icon: 'i-lucide-book-open',
+          label: '我的小店',
+          icon: 'i-lucide-store',
           variant: 'ghost',
           size: 'md',
           to: 'https://velvify.com/contact',
           target: '_blank'
         }, {
-          label: '我的小店',
-          icon: 'i-simple-icons-github',
+          label: '我的相册',
+          icon: 'i-lucide-image',
           variant: 'ghost',
           size: 'md',
-          to: 'https://velvify.com/blog',
+          to: 'https://onee.be',
           target: '_blank'
         }]"
         :ui="{
